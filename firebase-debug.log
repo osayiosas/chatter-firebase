@@ -1,0 +1,118 @@
+[debug] [2024-07-02T17:00:07.337Z] ----------------------------------------------------------------------
+[debug] [2024-07-02T17:00:07.340Z] Command:       /usr/local/bin/node /usr/local/bin/firebase init
+[debug] [2024-07-02T17:00:07.340Z] CLI Version:   12.7.0
+[debug] [2024-07-02T17:00:07.340Z] Platform:      darwin
+[debug] [2024-07-02T17:00:07.340Z] Node Version:  v20.15.0
+[debug] [2024-07-02T17:00:07.340Z] Time:          Tue Jul 02 2024 18:00:07 GMT+0100 (West Africa Standard Time)
+[debug] [2024-07-02T17:00:07.340Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-07-02T17:00:07.347Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-02T17:00:07.348Z] > authorizing via signed-in user (idiagheosaigbovoosas@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/user/Documents/chatter-project
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-07-02T17:01:27.722Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-07-02T17:01:29.067Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-07-02T17:01:29.067Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project chatter-app-dead9 (chatter-app) 
+[info] 
+=== Firestore Setup
+[debug] [2024-07-02T17:01:52.694Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chatter-app-dead9/services/firestore.googleapis.com [none]
+[debug] [2024-07-02T17:01:52.694Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chatter-app-dead9/services/firestore.googleapis.com x-goog-quota-user=projects/chatter-app-dead9
+[debug] [2024-07-02T17:01:57.810Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chatter-app-dead9/services/firestore.googleapis.com 200
+[debug] [2024-07-02T17:01:57.811Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chatter-app-dead9/services/firestore.googleapis.com [omitted]
+[debug] [2024-07-02T17:01:57.811Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/chatter-app-dead9/databases/(default) [none]
+[debug] [2024-07-02T17:02:00.621Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/chatter-app-dead9/databases/(default) 200
+[debug] [2024-07-02T17:02:00.622Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/chatter-app-dead9/databases/(default) {"name":"projects/chatter-app-dead9/databases/(default)","uid":"969f2aae-14fb-4f38-8c09-3b6ab20b6a5c","createTime":"2024-07-02T16:44:37.699848Z","updateTime":"2024-07-02T16:44:37.699848Z","locationId":"nam5","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2024-07-02T16:44:37.699848Z","appEngineIntegrationMode":"DISABLED","keyPrefix":"s","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","etag":"IPL16eDqiIcDMIjqre/miIcD"}
+[debug] [2024-07-02T17:02:00.622Z] database_type: FIRESTORE_NATIVE
+[debug] [2024-07-02T17:02:00.622Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-02T17:02:00.623Z] > authorizing via signed-in user (idiagheosaigbovoosas@gmail.com)
+[debug] [2024-07-02T17:02:00.623Z] [iam] checking project chatter-app-dead9 for permissions ["firebase.projects.get"]
+[debug] [2024-07-02T17:02:00.623Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/chatter-app-dead9:testIamPermissions [none]
+[debug] [2024-07-02T17:02:00.624Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/chatter-app-dead9:testIamPermissions x-goog-quota-user=projects/chatter-app-dead9
+[debug] [2024-07-02T17:02:00.624Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chatter-app-dead9:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-07-02T17:02:04.154Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/chatter-app-dead9:testIamPermissions 200
+[debug] [2024-07-02T17:02:04.155Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chatter-app-dead9:testIamPermissions {"permissions":["firebase.projects.get"]}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-07-02T17:02:18.159Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/chatter-app-dead9/releases pageSize=10&pageToken=
+[debug] [2024-07-02T17:02:19.779Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/chatter-app-dead9/releases 200
+[debug] [2024-07-02T17:02:19.780Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/chatter-app-dead9/releases {"releases":[{"name":"projects/chatter-app-dead9/releases/cloud.firestore","rulesetName":"projects/chatter-app-dead9/rulesets/4f2160c1-86a1-4ba2-87ee-1da3752dcd0b","createTime":"2024-07-02T16:44:46.602210Z","updateTime":"2024-07-02T16:44:46.602210Z"}]}
+[debug] [2024-07-02T17:02:19.780Z] Found ruleset: projects/chatter-app-dead9/rulesets/4f2160c1-86a1-4ba2-87ee-1da3752dcd0b
+[debug] [2024-07-02T17:02:19.781Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/chatter-app-dead9/rulesets/4f2160c1-86a1-4ba2-87ee-1da3752dcd0b [none]
+[debug] [2024-07-02T17:02:21.234Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/chatter-app-dead9/rulesets/4f2160c1-86a1-4ba2-87ee-1da3752dcd0b 200
+[debug] [2024-07-02T17:02:21.235Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/chatter-app-dead9/rulesets/4f2160c1-86a1-4ba2-87ee-1da3752dcd0b [omitted]
+[info] 
+[info] Firestore indexes allow you to perform complex queries while
+[info] maintaining performance that scales with the size of the result
+[info] set. You can keep index definitions in your project directory
+[info] and publish them with firebase deploy.
+[info] 
+[debug] [2024-07-02T17:02:21.240Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/chatter-app-dead9/databases/(default)/collectionGroups/-/indexes [none]
+[debug] [2024-07-02T17:02:21.243Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/chatter-app-dead9/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* [none]
+[debug] [2024-07-02T17:02:23.212Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/chatter-app-dead9/databases/(default)/collectionGroups/-/indexes 200
+[debug] [2024-07-02T17:02:23.212Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/chatter-app-dead9/databases/(default)/collectionGroups/-/indexes {}
+[debug] [2024-07-02T17:02:23.513Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/chatter-app-dead9/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* 200
+[debug] [2024-07-02T17:02:23.513Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/chatter-app-dead9/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false OR ttlConfig:* {"fields":[{"name":"projects/chatter-app-dead9/databases/(default)/collectionGroups/__default__/fields/*","indexConfig":{"indexes":[{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"ASCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","order":"DESCENDING"}],"state":"READY"},{"queryScope":"COLLECTION","fields":[{"fieldPath":"*","arrayConfig":"CONTAINS"}],"state":"READY"}]}}]}
+[info] 
+=== Functions Setup
+[debug] [2024-07-02T17:02:23.515Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-07-02T17:02:23.515Z] > authorizing via signed-in user (idiagheosaigbovoosas@gmail.com)
+[debug] [2024-07-02T17:02:23.515Z] [iam] checking project chatter-app-dead9 for permissions ["firebase.projects.get"]
+[debug] [2024-07-02T17:02:23.515Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/chatter-app-dead9:testIamPermissions [none]
+[debug] [2024-07-02T17:02:23.516Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/chatter-app-dead9:testIamPermissions x-goog-quota-user=projects/chatter-app-dead9
+[debug] [2024-07-02T17:02:23.516Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chatter-app-dead9:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-07-02T17:02:24.926Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/chatter-app-dead9:testIamPermissions 200
+[debug] [2024-07-02T17:02:24.927Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/chatter-app-dead9:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-07-02T17:02:24.928Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chatter-app-dead9/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-07-02T17:02:24.928Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chatter-app-dead9/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/chatter-app-dead9
+[debug] [2024-07-02T17:02:24.930Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chatter-app-dead9/services/runtimeconfig.googleapis.com [none]
+[debug] [2024-07-02T17:02:24.930Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chatter-app-dead9/services/runtimeconfig.googleapis.com x-goog-quota-user=projects/chatter-app-dead9
+[debug] [2024-07-02T17:02:27.619Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chatter-app-dead9/services/cloudfunctions.googleapis.com 200
+[debug] [2024-07-02T17:02:27.620Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chatter-app-dead9/services/cloudfunctions.googleapis.com [omitted]
+[debug] [2024-07-02T17:02:27.621Z] >>> [apiv2][query] POST https://serviceusage.googleapis.com/v1/projects/chatter-app-dead9/services/cloudfunctions.googleapis.com:enable [none]
+[debug] [2024-07-02T17:02:27.621Z] >>> [apiv2][(partial)header] POST https://serviceusage.googleapis.com/v1/projects/chatter-app-dead9/services/cloudfunctions.googleapis.com:enable x-goog-quota-user=projects/chatter-app-dead9
+[debug] [2024-07-02T17:02:28.576Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chatter-app-dead9/services/runtimeconfig.googleapis.com 200
+[debug] [2024-07-02T17:02:28.576Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chatter-app-dead9/services/runtimeconfig.googleapis.com [omitted]
+[debug] [2024-07-02T17:02:28.578Z] <<< [apiv2][status] POST https://serviceusage.googleapis.com/v1/projects/chatter-app-dead9/services/cloudfunctions.googleapis.com:enable 200
+[debug] [2024-07-02T17:02:28.578Z] <<< [apiv2][body] POST https://serviceusage.googleapis.com/v1/projects/chatter-app-dead9/services/cloudfunctions.googleapis.com:enable [omitted]
+[debug] [2024-07-02T17:02:38.579Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/chatter-app-dead9/services/cloudfunctions.googleapis.com [none]
+[debug] [2024-07-02T17:02:38.579Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/chatter-app-dead9/services/cloudfunctions.googleapis.com x-goog-quota-user=projects/chatter-app-dead9
+[debug] [2024-07-02T17:02:40.853Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/chatter-app-dead9/services/cloudfunctions.googleapis.com 200
+[debug] [2024-07-02T17:02:40.854Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/chatter-app-dead9/services/cloudfunctions.googleapis.com [omitted]
+[info] Let's create a new codebase for your functions.
+[info] A directory corresponding to the codebase will be created in your project
+[info] with sample code pre-configured.
+
+[info] See https://firebase.google.com/docs/functions/organize-functions for
+[info] more information on organizing your functions using codebases.
+
+[info] Functions can be deployed with firebase deploy.
+
+[info] ✔  Wrote functions/package.json 
+[info] ✔  Wrote functions/index.js 
+[info] ✔  Wrote functions/.gitignore 
+[info] 
+=== Emulators Setup
+[info] i  firestore: downloading cloud-firestore-emulator-v1.18.2.jar... {"metadata":{"emulator":{"name":"firestore"},"message":"downloading cloud-firestore-emulator-v1.18.2.jar..."}}
+[debug] [2024-07-02T17:10:39.328Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.18.2.jar 
+[debug] [2024-07-02T17:10:40.548Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.18.2.jar 200
+[debug] [2024-07-02T17:10:40.548Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/cloud-firestore-emulator-v1.18.2.jar [stream]
